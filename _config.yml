@@ -30,9 +30,14 @@ twitter_username: emiliebarnard
 github_username:  emiliebarnard
 
 # Build settings
+#remote_theme: jekyll/minima
 theme: minima
+minima: #skin for minima theme
+  skin: auto # auto adapts between classic light and dark themes depending on native theme
 plugins:
   - jekyll-feed
+  #- jekyll-remote-theme
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
