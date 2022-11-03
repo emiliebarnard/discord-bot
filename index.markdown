@@ -3,5 +3,12 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
+title: Guide
 ---
-testing text added to index markdown
+# Testing H1
+## Testing H2
+### Testing H3
+<details>
+<summary>Testing drop downs</summary>
+testing testing 123
+</details>

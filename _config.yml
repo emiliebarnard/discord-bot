@@ -21,9 +21,8 @@
 title: Discord Python Bot Quickstart Guide
 email: emiliebarnard@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  A quickstart guide for writing your first discord bot.
+  Geared towards those with light programming and/or Python experience.
 #baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://emiliebarnard.github.io/discord-bot-guide/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: emiliebarnard
@@ -32,8 +31,8 @@ github_username:  emiliebarnard
 # Build settings
 #remote_theme: jekyll/minima
 theme: minima
-minima: #skin for minima theme
-  skin: auto # auto adapts between classic light and dark themes depending on native theme
+#minima: #skin for minima theme
+  #skin: auto # auto adapts between classic light and dark themes depending on native theme
 plugins:
   - jekyll-feed
   #- jekyll-remote-theme
