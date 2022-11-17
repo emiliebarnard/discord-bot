@@ -17,8 +17,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-
-    if message.content.startswith('!bot'):
-        await message.channel.send('Hello, World!')
+    if message.content == "hello":
+        await message.channel.send("Hello, World!")
 
 client.run(TOKEN)
