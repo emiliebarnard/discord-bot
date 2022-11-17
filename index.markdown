@@ -18,14 +18,28 @@ For guidance with the above, respectively refer to the following resources:
 
 # Set Up Your Discord Developer Portal
 Navigate to the [Discord Developer Portal](https://discord.com/developers/) and log in with your Discord account. You may need to confirm your email address when you first connect your account to the Developer Portal. When you've successfully linked your account, you'll see the main Developer Portal page:
+
 ![Discord Developer Portal page](/images/dev-portal-home.png)
 ## Create a Bot Application
 Click the **New Application** button on the top-right of the page.
 
 ![Creating and naming a Discord App](/images/create-app.png){: width="50%"}
 
-Give your application a name, and review and agree to the Discord Developer Terms of Service and Developer Policy. Click **Create** on the bottom-right of the window.
+Give your bot application a name, and review and agree to the Discord Developer Terms of Service and Developer Policy. Click **Create** on the bottom-right of the window. You should see the following page:
+![Discord App General Information Page](/images/gen-info.png)
+
+Optionally, add additional information about your bot in the description and add tags to describe the content and functionality. You may also complete this later.
+
+![Creating a Bot from Discord application settings](/images/bot-settings.png)
+
+Select **Bot** from the **Settings** menu on the left side of the page, then **Add Bot**. When prompted to add a bot to this app, select **Yes, do it!!** After creation, you'll see your bot's settings:
+
+![Build-A-Bot settings page](/images/build-a-bot.png)
+
+You may optionally add an icon for your bot or change its username.
+
 ## Link Your Bot to Your Server
+
 
 # Set Up Python
 ## Access Command Line
@@ -45,3 +59,4 @@ TO-DO: switch to my gaming PC to complete and document these steps
 ### Connect to Discord
 
 # Bot Suggestions & Basic Commands
+TO-DO: add a few more simple examples
