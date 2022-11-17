@@ -17,18 +17,26 @@ For guidance with the above, respectively refer to the following resources:
 3. [W3 Schools Python Tutorial](https://www.w3schools.com/python/)
 
 # Set Up Your Discord Developer Portal
+Navigate to the [Discord Developer Portal](https://discord.com/developers/) and log in with your Discord account. You may need to confirm your email address when you first connect your account to the Developer Portal. When you've successfully linked your account, you'll see the main Developer Portal page:
+![Discord Developer Portal page](/images/dev-portal-home.png)
 ## Create a Bot Application
+Click the **New Application** button on the top-right of the page.
+
+![Creating and naming a Discord App](/images/create-app.png){: width="50%"}
+
+Give your application a name, and review and agree to the Discord Developer Terms of Service and Developer Policy. Click **Create** on the bottom-right of the window.
 ## Link Your Bot to Your Server
 
 # Set Up Python
 ## Access Command Line
+Computer operating systems allow command line access in different ways. Follow the instructions for your operating system below.   
 <details>
 <summary>Mac or Linux</summary>
 TO-DO: add specifics
 </details>
 <details>
 <summary>Windows</summary>
-TO-DO: add specifics
+TO-DO: switch to my gaming PC to complete and document these steps
 </details>
 ## Install discord.py Library
 
