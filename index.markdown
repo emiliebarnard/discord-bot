@@ -5,10 +5,25 @@
 layout: default
 title: Guide
 ---
-# Testing H1
-## Testing H2
-### Testing H3
+# Review Preliminaries
+# Set Up Your Discord Developer Portal
+## Create a Bot Application
+### Link Your Bot to Your Server
+
+# Set Up Python
+## Access Command Line
 <details>
-<summary>Testing drop downs</summary>
-testing testing 123
+<summary>Mac or Linux</summary>
+TO-DO: add specifics
 </details>
+<details>
+<summary>Windows</summary>
+TO-DO: add specifics
+</details>
+## Install discord.py Library
+
+# Write Code!
+## Understand Initial Template
+### Connect to Discord
+
+# Bot Suggestions & Basic Commands
