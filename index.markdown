@@ -101,7 +101,9 @@ pip install -U discord.py
 ```
 
 # Write Code!
-## Understand Initial Template
+We finally get to code in Python!
+
+## Edit Initial Template
 ### Connect to Discord
 
 # Bot Suggestions & Basic Commands
