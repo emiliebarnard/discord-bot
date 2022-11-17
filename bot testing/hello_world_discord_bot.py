@@ -13,10 +13,12 @@ client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    print(f'We have logged in as {client.user}')
+    #outputs to local command line
+    print("The bot has logged in!")
 
 @client.event
 async def on_message(message):
+    # server Hello, World! message
     if message.content == "hello":
         await message.channel.send("Hello, World!")
 
