@@ -127,5 +127,7 @@ Replace `<paste-your-token-here>` with your unique API token string that you cop
 
 ### Create .py file
 
+TO-DO: add Python code template and explanation
+
 # Bot Suggestions & Basic Commands
-TO-DO: add a few more simple examples
+TO-DO: add a few simple examples
