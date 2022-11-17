@@ -91,6 +91,7 @@ On your keyboard, press <b>Command</b> and the <b>space bar</b> to open <b>Spotl
 <summary>Windows</summary>
 TO-DO: switch to my gaming PC to complete and document these steps
 </details>
+
 ## Install discord.py Library
 We will use <i>pip</i>, the preferred installer program for Python, to download the discord.py Python library. This is required to write Python code that allows us to interact with Discord.
 
@@ -100,11 +101,31 @@ In your command line window, type the following command and press the **enter** 
 pip install -U discord.py
 ```
 
-# Write Code!
-We finally get to code in Python!
+## Install dotenv library
+While this step is optional, it is best practice to install this Library to help us keep our private API token separate from our Python code.
 
-## Edit Initial Template
-### Connect to Discord
+In your command line window, type the following command and press the **enter** key:
+
+```
+pip install -U python-dotenv
+```
+
+# Write Code!
+We finally get to code!
+
+## Edit Initial Templates
+We'll create two files: an .env file that will store our API token, and a .py file into which we'll write our Python code. You could store your API token directly in the .py file, but separating it into a different file enables you to share your Python code without sharing your private API token. Create one folder that will hold both of these files.
+
+### Create .env file
+Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
+
+```
+# Private API token generated from Discord Developer Portal:
+DISCORD_TOKEN=<paste-your-token-here>
+```
+Replace `<paste-your-token-here>` with your unique API token string that you copied and saved in a secure location earlier.
+
+### Create .py file
 
 # Bot Suggestions & Basic Commands
 TO-DO: add a few more simple examples
