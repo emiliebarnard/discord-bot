@@ -78,22 +78,27 @@ You should see a message in your server's main text channel confirming that your
 
 ><sup>Note: If you want to enable more functions in your bot, you'll need to come back to the Permissions section in the Developer Portal and select the relevant permissions. You will also need to copy the new URL and repeat the above steps to connect and authorize your bot to perform certain actions in your server. It is best practice to only select the permissions you actually use. Refer to the [Discord Documentation](https://discord.com/developers/docs/topics/permissions) to learn more about what each permission does.</sup>
 
-
-
-
-
 # Set Up Python
 ## Access Command Line
-Computer operating systems allow command line access in different ways. Follow the instructions for your operating system below.   
+Computer operating systems allow command line access in different ways. Follow the instructions for your operating system below.  
+
 <details>
-<summary>Mac or Linux</summary>
-TO-DO: add specifics
+<summary>Mac</summary>
+On your keyboard, press <b>Command</b> and the <b>space bar</b> to open <b>Spotlight</b> search. Type <i>terminal</i> and press the <b>enter</b> key on your keyboard. This will open a new Terminal window which acts as a way to access the command line on a Mac.
 </details>
+
 <details>
 <summary>Windows</summary>
 TO-DO: switch to my gaming PC to complete and document these steps
 </details>
 ## Install discord.py Library
+We will use <i>pip</i>, the preferred installer program for Python, to download the discord.py Python library. This is required to write Python code that allows us to interact with Discord.
+
+In your command line window, type the following command and press the **enter** key:
+
+```
+pip install -U discord.py
+```
 
 # Write Code!
 ## Understand Initial Template
