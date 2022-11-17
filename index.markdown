@@ -127,7 +127,35 @@ Replace `<paste-your-token-here>` with your unique API token string that you cop
 
 ### Create .py file
 
-TO-DO: add Python code template and explanation
+TO-DO: add explanation
+
+```
+import os
+
+import discord
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+
+intents = discord.Intents.default()
+intents.message_content = True
+
+client = discord.Client(intents=intents)
+
+@client.event
+async def on_ready():
+    #outputs to local command line
+    print("The bot has logged in!")
+
+@client.event
+async def on_message(message):
+    # server Hello, World! message
+    if message.content == "hello":
+        await message.channel.send("Hello, World!")
+
+client.run(TOKEN)
+```
 
 # Bot Suggestions & Basic Commands
 TO-DO: add a few simple examples
