@@ -97,14 +97,14 @@ We will use <i>pip</i>, the preferred installer program for Python, to download 
 
 In your command line window, type the following command and press the **enter** key:
 
-`pip install -U discord.py'
+```pip install -U discord.py```
 
 ## Install dotenv library
 While this step is optional, it is best practice to install this Library to help us keep our private API token separate from our Python code.
 
 In your command line window, type the following command and press the **enter** key:
 
-`pip install -U python-dotenv`
+```pip install -U python-dotenv```
 
 # Write Code!
 We finally get to code!
@@ -153,11 +153,11 @@ Run your code by typing the following into your command line and pressing the **
 
 <details markdown="1">
 <summary>Mac</summary>
-`python3 hello_world.py`
+```python3 hello_world.py```
 </details>
 <details markdown="1">
 <summary>Windows</summary>
-`py -3 hello_world.py`
+```py -3 hello_world.py```
 </details>
 
 
@@ -177,7 +177,4 @@ async def on_message(message):
         await message.channel.send("Hi there!")
 ```
 If a user sends the message <i>Hello<i> in the server, the bot will reply with <i>Hi there!<i>. You can add to this code so your bot responds to multiple messages with distinct responses.
-</details>
-
-
 </details>
