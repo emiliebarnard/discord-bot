@@ -1,3 +1,9 @@
+<style>
+.copy-code-button {
+  display: block;
+}
+</style>
+
 ---
 # Feel free to add content and custom Front Matter to this file.
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
@@ -125,6 +131,7 @@ Replace `<paste-your-token-here>` with your unique API token string that you cop
 
 Next, create a Python file named hello_world.py in the same folder. Add the following code to this file:
 
+{% include codeHeader.html %}
 ```
 import os
 import discord
