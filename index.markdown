@@ -178,3 +178,15 @@ async def on_message(message):
 ```
 If a user sends the message <i>Hello<i> in the server, the bot will reply with <i>Hi there!<i>. You can add to this code so your bot responds to multiple messages with distinct responses.
 </details>
+
+<details markdown="1">
+<summary>Another example</summary>
+details
+</details>
+
+<details markdown="1">
+<summary>Another example</summary>
+details
+</details>
+
+For more examples, refer to the [discord.py documenation](https://discordpy.readthedocs.io/en/latest/faq.html#general).
