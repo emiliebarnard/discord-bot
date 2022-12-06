@@ -3,9 +3,9 @@ const codeBlocks = document.querySelectorAll('.code-header + * > .highlighter-ro
 const copyCodeButtons = document.querySelectorAll('.copy-code-button');
 
 copyCodeButtons.forEach((copyCodeButton, index) => {
-  const code = codeBlocks[index].innerText;
 
   copyCodeButton.addEventListener('click', () => {
+    const code = codeBlocks[index].innerText;
     // Copy the code to the user's clipboard
     window.navigator.clipboard.writeText(code);
 
