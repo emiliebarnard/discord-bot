@@ -127,7 +127,7 @@ Replace `<paste-your-token-here>` with your unique API token string that you cop
 
 ### Create .py file
 
-TO-DO: add explanation
+Next, create a Python file named hello_world.py in the same folder. Add the following code to this file:
 
 ```
 import os
@@ -150,6 +150,20 @@ async def on_ready():
 
 client.run(TOKEN)
 ```
+
+><sup>Note: The code requires the first three import lines. The next two lines support in hiding your personal token from this file by pulling it from the env file created earlier. The next three lines link to the Discord client with specific permissions. @client.event is a decorator function, meaning it takes other functions, like on_ready, as arguments. This is how Discord handles events. Finally, the client runs with your token.</sup>
+
+Run your code by typing the following into your command line and pressing the **enter** key:
+
+```
+python3 hello_world.py
+```
+
+Successful code results in a message printed to your command line:
+
+and a message posted by your bot in your Discord server:
+
+
 
 # Bot Suggestions & Basic Commands
 TO-DO: add a few simple examples
