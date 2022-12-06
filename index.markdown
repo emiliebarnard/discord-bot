@@ -89,7 +89,7 @@ On your keyboard, press <b>Command</b> and the <b>space bar</b> to open <b>Spotl
 
 <details>
 <summary>Windows</summary>
-TO-DO: switch to my gaming PC to complete and document these steps
+In your Windows search bar, search for <b>command prompt</b>. Click on the application icon to open it.
 </details>
 
 ## Install discord.py Library
@@ -157,27 +157,18 @@ Run your code by typing the following into your command line and pressing the **
 
 <details markdown="1">
 <summary>Mac</summary>
-
-```
-py -3 hello_world.py
-```
-
-</details>
-<details markdown="1">
-<summary>Windows</summary>
-
 ```
 python3 hello_world.py
 ```
-
+</details>
+<details markdown="1">
+<summary>Windows</summary>
+```
+py -3 hello_world.py
+```
 </details>
 
-
-
-
 Successful code will display the message "The bot has logged in!" on your command line, and your bot will post a message in your Discord server:
-
-
 
 # Bot Suggestions & Basic Commands
 TO-DO: add a few simple examples
