@@ -155,13 +155,27 @@ client.run(TOKEN)
 
 Run your code by typing the following into your command line and pressing the **enter** key:
 
+<details>
+<summary>Mac</summary>
+
+```
+py -3 hello_world.py
+```
+
+</details>
+<details>
+<summary>Windows</summary>
+
 ```
 python3 hello_world.py
 ```
 
-Successful code results in a message printed to your command line:
+</details>
 
-and a message posted by your bot in your Discord server:
+
+
+
+Successful code will display the message "The bot has logged in!" on your command line, and your bot will post a message in your Discord server:
 
 
 
