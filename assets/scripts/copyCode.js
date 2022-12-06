@@ -10,7 +10,7 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
     window.navigator.clipboard.writeText(code);
 
     // Update the button text visually
-    const { innerText: originalText } = copyCodeButton;
+    const { innerHTML: originalHTML } = copyCodeButton;
     copyCodeButton.innerHTML = '<i class="fa-solid fa-clone"></i>';
 
     // (Optional) Toggle a class for styling the button
@@ -18,7 +18,7 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
 
     // After 2 seconds, reset the button to its initial UI
     setTimeout(() => {
-      copyCodeButton.innerHTML = originalText;
+      copyCodeButton.innerHTML = originalHTML;
       copyCodeButton.classList.remove('copied');
     }, 2000);
   });
