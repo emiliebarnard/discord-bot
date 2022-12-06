@@ -15,7 +15,8 @@ async def on_ready():
     print("The bot has logged in!") #outputs to local command line
     server = client.guilds[0]
     first_channel = server.text_channels[0]
-    await first_channel.send("Hello, World!")
+    #await first_channel.send("Hello, World!")
+    await first_channel.send("Hello, @everyone!")
 
 # call and response example
 @client.event
