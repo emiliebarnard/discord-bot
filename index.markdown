@@ -97,6 +97,7 @@ We will use <i>pip</i>, the preferred installer program for Python, to download 
 
 In your command line window, type the following command and press the **enter** key:
 
+{% include codeHeader.html %}
 ```pip install -U discord.py```
 
 ## Install dotenv library
@@ -104,6 +105,7 @@ While this step is optional, it is best practice to install this Library to help
 
 In your command line window, type the following command and press the **enter** key:
 
+{% include codeHeader.html %}
 ```pip install -U python-dotenv```
 
 # Write Code!
@@ -115,6 +117,7 @@ We'll create two files: an .env file that will store our API token, and a .py fi
 ### Create .env file
 Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
 
+{% include codeHeader.html %}
 ```
 # Private API token generated from Discord Developer Portal:
 DISCORD_TOKEN=<paste-your-token-here>
@@ -154,10 +157,12 @@ Run your code by typing the following into your command line and pressing the **
 
 <details markdown="1">
 <summary>Mac</summary>
+{% include codeHeader.html %}
 ```python3 hello_world.py```
 </details>
 <details markdown="1">
 <summary>Windows</summary>
+{% include codeHeader.html %}
 ```py -3 hello_world.py```
 </details>
 
@@ -170,6 +175,7 @@ Looking for more ideas for your bot? More basic examples are below. Note that yo
 ## Respond to Message
 To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. Then, add the following code to your Python file:
 
+{% include codeHeader.html %}
 ```
 @client.event
 async def on_message(message):
@@ -181,6 +187,7 @@ If a user sends the message <i>Hello</i> in the server, the bot will reply with 
 ## Use @everyone Tag
 You can code your bot to send a message that tags @everyone on the server, which can be useful for annoucements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following example shows this tag added to our original message:
 
+{% include codeHeader.html %}
 ```
 @client.event
 async def on_ready():
