@@ -97,18 +97,14 @@ We will use <i>pip</i>, the preferred installer program for Python, to download 
 
 In your command line window, type the following command and press the **enter** key:
 
-```
-pip install -U discord.py
-```
+`pip install -U discord.py'
 
 ## Install dotenv library
 While this step is optional, it is best practice to install this Library to help us keep our private API token separate from our Python code.
 
 In your command line window, type the following command and press the **enter** key:
 
-```
-pip install -U python-dotenv
-```
+`pip install -U python-dotenv`
 
 # Write Code!
 We finally get to code!
@@ -157,18 +153,22 @@ Run your code by typing the following into your command line and pressing the **
 
 <details markdown="1">
 <summary>Mac</summary>
-```
-python3 hello_world.py
-```
+`python3 hello_world.py`
 </details>
 <details markdown="1">
 <summary>Windows</summary>
-```
-py -3 hello_world.py
-```
+`py -3 hello_world.py`
 </details>
+
 
 Successful code will display the message "The bot has logged in!" on your command line, and your bot will post a message in your Discord server:
 
-# Bot Suggestions & Basic Commands
-TO-DO: add a few simple examples
+# Bot Suggestions
+Looking for more ideas for your bot? More basic examples are below. Note that you will need to update your bot permissions in the Discord Developer Portal for some.
+
+<details markdown="1">
+<summary>Call and Response</summary>
+To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. Then, add the following code to your Python file: 
+</details>
+
+</details>
