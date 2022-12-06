@@ -176,7 +176,7 @@ async def on_message(message):
     if message.content == "Hello":
         await message.channel.send("Hi there!")
 ```
-If a user sends the message <i>Hello<i> in the server, the bot will reply with <i>Hi there!<i>. You can add to this code so your bot responds to multiple messages with distinct responses.
+If a user sends the message <i>Hello</i> in the server, the bot will reply with <i>Hi there!</i>. You can add to this code so your bot responds to multiple messages with distinct responses.
 </details>
 
 <details markdown="1">
