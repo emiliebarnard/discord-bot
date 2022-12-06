@@ -131,7 +131,6 @@ TO-DO: add explanation
 
 ```
 import os
-
 import discord
 from dotenv import load_dotenv
 
@@ -140,19 +139,14 @@ TOKEN = os.getenv('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
 intents.message_content = True
-
 client = discord.Client(intents=intents)
 
 @client.event
 async def on_ready():
-    #outputs to local command line
-    print("The bot has logged in!")
-
-@client.event
-async def on_message(message):
-    # server Hello, World! message
-    if message.content == "hello":
-        await message.channel.send("Hello, World!")
+    print("The bot has logged in!") # outputs to local command line
+    server = client.guilds[0] # gets your server
+    first_channel = server.text_channels[0] # gets first text channel
+    await first_channel.send("Hello, World!") # outputs to Discord
 
 client.run(TOKEN)
 ```
