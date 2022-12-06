@@ -17,10 +17,10 @@ async def on_ready():
     first_channel = server.text_channels[0]
     await first_channel.send("Hello, World!")
 
-# @client.event
-# async def on_message(message):
-#     # server Hello, World! message
-#     if message.content == "hello":
-#         await message.channel.send("Hi there!")
+# call and response example
+@client.event
+async def on_message(message):
+    if message.content == "Hello":
+        await message.channel.send("Hi there!")
 
 client.run(TOKEN)
