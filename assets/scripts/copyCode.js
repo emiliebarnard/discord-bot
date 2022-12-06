@@ -11,7 +11,7 @@ copyCodeButtons.forEach((copyCodeButton, index) => {
 
     // Update the button text visually
     const { innerText: originalText } = copyCodeButton;
-    copyCodeButton.innerText = 'Copied!';
+    copyCodeButton.innerText = '<i class="fa-solid fa-clone"></i>';
 
     // (Optional) Toggle a class for styling the button
     copyCodeButton.classList.add('copied');
