@@ -5,9 +5,6 @@
 layout: default
 title: Guide
 ---
-
-{% include post.html %}
-
 # Review Preliminaries
 This quickstart guide assumes the following:
 1. You use and understand Discord.
@@ -196,3 +193,5 @@ async def on_ready():
 details
 
 For more examples, refer to the [discord.py documenation](https://discordpy.readthedocs.io/en/latest/faq.html#general).
+
+{% include post.html %}
