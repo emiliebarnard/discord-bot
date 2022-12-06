@@ -168,7 +168,16 @@ Looking for more ideas for your bot? More basic examples are below. Note that yo
 
 <details markdown="1">
 <summary>Call and Response</summary>
-To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. Then, add the following code to your Python file: 
+To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. Then, add the following code to your Python file:
+
+```
+@client.event
+async def on_message(message):
+    if message.content == "Hello":
+        await message.channel.send("Hi there!")
+```
+If a user sends the message <i>Hello<i> in the server, the bot will reply with <i>Hi there!<i>. You can add to this code so your bot responds to multiple messages with distinct responses.
 </details>
+
 
 </details>
