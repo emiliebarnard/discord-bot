@@ -155,7 +155,7 @@ client.run(TOKEN)
 
 Run your code by typing the following into your command line and pressing the **enter** key:
 
-<details>
+<details markdown="1">
 <summary>Mac</summary>
 
 ```
@@ -163,7 +163,7 @@ py -3 hello_world.py
 ```
 
 </details>
-<details>
+<details markdown="1">
 <summary>Windows</summary>
 
 ```
