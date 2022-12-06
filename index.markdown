@@ -167,7 +167,7 @@ Successful code will display the message "The bot has logged in!" on your comman
 Looking for more ideas for your bot? More basic examples are below. Note that you will need to update your bot permissions in the Discord Developer Portal for some.
 
 <details markdown="1">
-<summary>Call and Response</summary>
+<summary>Respond to Message</summary>
 To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. Then, add the following code to your Python file:
 
 ```
@@ -180,8 +180,16 @@ If a user sends the message <i>Hello</i> in the server, the bot will reply with 
 </details>
 
 <details markdown="1">
-<summary>Another example</summary>
-details
+<summary>Use @everyone Tag</summary>
+You can code your bot to send a message that tags @everyone on the server, which can be useful for annoucements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following example shows this tag added to our original message:
+
+```
+@client.event
+async def on_ready():
+    server = client.guilds[0] # gets your server
+    first_channel = server.text_channels[0] # gets first text channel
+    await first_channel.send("Hello, @everyone!") # tags everyone
+```
 </details>
 
 <details markdown="1">
