@@ -170,6 +170,8 @@ Run your code by typing the following into your command line and pressing the **
 
 Successful code will display the message "The bot has logged in!" on your command line, and your bot will post a message in your Discord server:
 
+![The Discord Bot successfully posts "Hello, World!" in the server.](/images/success.png)
+
 # Bot Suggestions
 Looking for more ideas for your bot? More basic examples are below. Note that you will need to update your bot permissions in the Discord Developer Portal for some.
 
