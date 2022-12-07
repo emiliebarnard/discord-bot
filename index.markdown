@@ -23,56 +23,56 @@ Navigate to the [Discord Developer Portal](https://discord.com/developers/) and 
 
 ![Discord Developer Portal page](/images/dev-portal-home.png)
 ## Create a Bot Application
-\1. Click the **New Application** button on the top-right of the page.
+1\. Click the **New Application** button on the top-right of the page.
 
   ![Creating and naming a Discord App](/images/create-app.png){: width="50%"}
 
-\2. Give your bot application a name, and review and agree to the Discord Developer Terms of Service and Developer Policy. Click **Create** on the bottom-right of the window. You should see the following page:
+2\. Give your bot application a name, and review and agree to the Discord Developer Terms of Service and Developer Policy. Click **Create** on the bottom-right of the window. You should see the following page:
 
   ![Discord App General Information Page](/images/gen-info.png)
 
-\3. Optionally, add additional information about your bot in the description and add tags to describe the content and functionality. You may also complete this later.
+3\. Optionally, add additional information about your bot in the description and add tags to describe the content and functionality. You may also complete this later.
 
   ![Creating a Bot from Discord application settings](/images/bot-settings.png)
 
-\4. Select **Bot** from the **Settings** menu on the left side of the page, then **Add Bot**. When prompted to add a bot to this app, select **Yes, do it!!** After creation, you'll see your bot's settings:
+4\. Select **Bot** from the **Settings** menu on the left side of the page, then **Add Bot**. When prompted to add a bot to this app, select **Yes, do it!!** After creation, you'll see your bot's settings:
 
   ![Build-A-Bot settings page](/images/build-a-bot.png)
 
-\5. You may optionally add an icon for your bot or change its username.
+5\. You may optionally add an icon for your bot or change its username.
 
 ## Link Your Bot to Your Server
 You'll need your bot's unique API token to connect it with your server and perform fun commands.
 
 ><sup>Note: Keep your API token private (otherwise other people can control your bot) and save it to a secure location. Keep this in mind if you plan to host your code publicly, such as on GitHub. [Black Tech Divas offers a tutorial](https://medium.com/black-tech-diva/hide-your-api-keys-7635e181a06c) on this. You can reset your token at anytime if it is accidentally shared, but you'll need to update it in your code.</sup>
 
-\1. Click **Reset Token**, then **Yes, do it!** A long string of text, your API token, will appear:
+1\. Click **Reset Token**, then **Yes, do it!** A long string of text, your API token, will appear:
 
   ![Copy API token](/images/copy-token.png){: width="75%"}
 
   (I have reset my API token since creating this guide. Your API token will be different!)
 
-\2. Click **Copy**. Open a text editor, paste the token, and save this text to a secure location. We'll use it soon.
+2\. Click **Copy**. Open a text editor, paste the token, and save this text to a secure location. We'll use it soon.
 
   Next you'll need to set the permissions, what your bot is able to do, and scope, where your bot can access information. We'll first set the scope.
 
-\3. Under **Settings** on the left-side of the page, select **OAuth2**.
+3\. Under **Settings** on the left-side of the page, select **OAuth2**.
 
   ><sup>Note:OAuth2 is a common tool that allows an application or website to access information from another host. In our case, it will allow our bot to access resources from Discord.</sup>
 
-\4. Under **Scopes**, select **bot**.
+4\. Under **Scopes**, select **bot**.
 
   ![Setting the scope of the Discord Bot](/images/bot-scope.png)
 
-\5. You'll now see various **Permissions** appear. For now, select **Send Messages** only.
+5\. You'll now see various **Permissions** appear. For now, select **Send Messages** only.
 
   ![Setting the permissions of the Discord Bot](/images/bot-perms.png)
 
-\6. Locate the **Generate URL** section at the bottom of the page. Select **Copy**, and paste this URL into a new tab in your web browser.
+6\. Locate the **Generate URL** section at the bottom of the page. Select **Copy**, and paste this URL into a new tab in your web browser.
 
   ![Linking your bot to a server](/images/add-to-server.png){: width="50%"}
 
-\7. Select the server you'd like to host your bot under the **Add-to-Server** drop-down, then click **Continue**. Finally, select **Authorize** to confirm. You may need to complete a CAPTCHA.
+7\. Select the server you'd like to host your bot under the **Add-to-Server** drop-down, then click **Continue**. Finally, select **Authorize** to confirm. You may need to complete a CAPTCHA.
 
   You should see a message in your server's main text channel confirming that your bot joined your server. It will also be listed in the server members on the right.
 
