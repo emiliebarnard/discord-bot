@@ -227,7 +227,7 @@ intents.message_content = True #
 bot = commands.Bot(command_prefix='$', intents=intents) # $ can be changed
 
 @bot.command()
-async def hello(ctx):
+async def hello(ctx): # ctx, short for Context, is required to read the message in the server
     await ctx.send("Hello, World!")
 @bot.command()
 async def bye(ctx):
