@@ -8,7 +8,7 @@ title: Guide
 # Before You Start
 This quickstart guide assumes the following:
 1. You use and understand Discord.
-2. You own your own Discord server or hold administrator privledges for a Discord server.
+2. You own your own Discord server or hold administrator privileges for a Discord server.
 3. You understand the basics of Python or a similar programming language.
 4. You have the latest version of Python installed on your computer.
 
@@ -86,12 +86,12 @@ Computer operating systems allow command line access in different ways. Follow t
 
 <details>
 <summary>Mac</summary>
-1\. On your keyboard, press <b>Command</b> and the <b>space bar</b> to open <b>Spotlight</b> search. Type <i>terminal</i> and press the <b>enter</b> key on your keyboard. This will open a new Terminal window which acts as a way to access the command line on a Mac.
+1. On your keyboard, press <b>Command</b> and the <b>space bar</b> to open <b>Spotlight</b> search. Type <i>terminal</i> and press the <b>enter</b> key on your keyboard. This will open a new Terminal window which acts as a way to access the command line on a Mac.
 </details>
 
 <details>
 <summary>Windows</summary>
-1\. In your Windows search bar, search for <b>command prompt</b>. Click on the application icon to open it.
+1. In your Windows search bar, search for <b>command prompt</b>. Click on the application icon to open it.
 </details>
 
 ## Install discord.py Library
@@ -188,7 +188,7 @@ async def on_message(message):
 If a user sends the message <i>Hello</i> in the server, the bot will reply with <i>Hi there!</i>. You can add to this code so your bot responds to multiple messages with distinct responses.
 
 ## Use @everyone Tag
-You can code your bot to send a message that tags @everyone on the server, which can be useful for annoucements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following example shows this tag added to our original message:
+You can code your bot to send a message that tags @everyone on the server, which can be useful for announcements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following example shows this tag added to our original message:
 
 {% include codeHeader.html %}
 ```
