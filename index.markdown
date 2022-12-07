@@ -189,7 +189,7 @@ async def on_message(message):
 
 If a user sends the message <i>Hello</i> in the server, the bot will reply with <i>Hi there!</i>. You can add to this code so your bot responds to multiple messages with distinct responses.
 
-## Use @everyone Tag
+## Tag @everyone
 You can code your bot to send a message that tags @everyone on the server, which can be useful for announcements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following example shows this tag added to our original message:
 
 {% include codeHeader.html %}
@@ -201,8 +201,8 @@ async def on_ready():
     await first_channel.send("Hello, @everyone!") # tags everyone
 {% endhighlight %}
 
-## TODO: Another example
-TODO: add details
+## Respond to Commands
+In the previous examples, we created a `client` object in our code to communicate with Discord. To utilize bot commands, we will instead use a `bot` object. The code below requires 
 
 
 For more examples, refer to the [discord.py documenation](https://discordpy.readthedocs.io/en/latest/faq.html#general).
