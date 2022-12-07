@@ -199,8 +199,9 @@ async def on_ready():
     await first_channel.send("Hello, @everyone!") # tags everyone
 ```
 
-## Another example
-details
+## TODO: Another example
+TODO: add details
+
 
 For more examples, refer to the [discord.py documenation](https://discordpy.readthedocs.io/en/latest/faq.html#general).
 
