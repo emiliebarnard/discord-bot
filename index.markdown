@@ -177,7 +177,11 @@ Successful code will display the message "The bot has logged in!" on your comman
 Looking for more ideas for your bot? More basic examples are below. Note that you will need to update your bot permissions in the Discord Developer Portal for some.
 
 ## Respond to Message
-To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. Then, add the following code to your Python file:
+To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. You also need to enable <b>message content intent<b> under the Bot settings in your Discord Developer Portal:
+
+![Enabling bot message content intent in Developer Portal](/images/message-intent.png)
+
+Then, add the following code to your Python file:
 
 {% include codeHeader.html %}
 {% highlight python %}
@@ -202,7 +206,7 @@ async def on_ready():
 {% endhighlight %}
 
 ## Respond to Commands
-In the previous examples, we created a `client` object in our code to communicate with Discord. To utilize bot commands, we will instead use a `bot` object. The code below requires 
+In the previous examples, we created a `client` object in our code to communicate with Discord. To utilize bot commands, we will instead use a `bot` object. You also need to enable <b>message content intent<b> under the Bot settings in your Discord Developer Portal (see [Respond to Message](#respond-to-message)).
 
 
 For more examples, refer to the [discord.py documenation](https://discordpy.readthedocs.io/en/latest/faq.html#general).
