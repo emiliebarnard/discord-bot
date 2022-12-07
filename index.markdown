@@ -120,10 +120,11 @@ We'll create two files: an .env file that will store our API token, and a .py fi
 1\. Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
 
 {% include codeHeader.html %}
-```
+{% highlight html %}
 # Private API token generated from Discord Developer Portal:
 DISCORD_TOKEN=<paste-your-token-here>
-```
+{% endhighlight %}
+
 2\. Replace `<paste-your-token-here>` with your unique API token string that you copied and saved in a secure location earlier.
 
 ### Create .py file
@@ -179,25 +180,26 @@ Looking for more ideas for your bot? More basic examples are below. Note that yo
 To have your bot respond to messages, ensure both <b>send messages</b> and <b>read message history</b> permissions are allowed. Then, add the following code to your Python file:
 
 {% include codeHeader.html %}
-```
+{% highlight python %}
 @client.event
 async def on_message(message):
     if message.content == "Hello":
         await message.channel.send("Hi there!")
-```
+{% endhighlight %}
+
 If a user sends the message <i>Hello</i> in the server, the bot will reply with <i>Hi there!</i>. You can add to this code so your bot responds to multiple messages with distinct responses.
 
 ## Use @everyone Tag
 You can code your bot to send a message that tags @everyone on the server, which can be useful for announcements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following example shows this tag added to our original message:
 
 {% include codeHeader.html %}
-```
+{% highlight python %}
 @client.event
 async def on_ready():
     server = client.guilds[0] # gets your server
     first_channel = server.text_channels[0] # gets first text channel
     await first_channel.send("Hello, @everyone!") # tags everyone
-```
+{% endhighlight %}
 
 ## TODO: Another example
 TODO: add details
