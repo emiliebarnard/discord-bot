@@ -131,7 +131,7 @@ DISCORD_TOKEN=<paste-your-token-here>
 1\. Next, create a Python file named hello_world.py in the same folder. Add the following code to this file:
 
 {% include codeHeader.html %}
-```
+{% highlight python %}
 import os
 import discord
 from dotenv import load_dotenv
@@ -151,7 +151,7 @@ async def on_ready():
     await first_channel.send("Hello, World!") # outputs to Discord
 
 client.run(TOKEN)
-```
+{% endhighlight %}
 
 ><sup>Note: The code requires the first three import lines. The next two lines support in hiding your personal token from this file by pulling it from the env file created earlier. The next three lines link to the Discord client with specific permissions. @client.event is a decorator function, meaning it takes other functions, like on_ready, as arguments. This is how Discord handles events. Finally, the client runs with your token.</sup>
 
