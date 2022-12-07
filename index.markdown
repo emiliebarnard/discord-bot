@@ -86,18 +86,18 @@ Computer operating systems allow command line access in different ways. Follow t
 
 <details>
 <summary>Mac</summary>
-On your keyboard, press <b>Command</b> and the <b>space bar</b> to open <b>Spotlight</b> search. Type <i>terminal</i> and press the <b>enter</b> key on your keyboard. This will open a new Terminal window which acts as a way to access the command line on a Mac.
+1\. On your keyboard, press <b>Command</b> and the <b>space bar</b> to open <b>Spotlight</b> search. Type <i>terminal</i> and press the <b>enter</b> key on your keyboard. This will open a new Terminal window which acts as a way to access the command line on a Mac.
 </details>
 
 <details>
 <summary>Windows</summary>
-In your Windows search bar, search for <b>command prompt</b>. Click on the application icon to open it.
+1\. In your Windows search bar, search for <b>command prompt</b>. Click on the application icon to open it.
 </details>
 
 ## Install discord.py Library
 We will use <i>pip</i>, the preferred installer program for Python, to download the discord.py Python library. This is required to write Python code that allows us to interact with Discord.
 
-In your command line window, type the following command and press the **enter** key:
+2\. In your command line window, type the following command and press the **enter** key:
 
 {% include codeHeader.html %}
 ```pip install -U discord.py```
@@ -117,18 +117,18 @@ We finally get to code!
 We'll create two files: an .env file that will store our API token, and a .py file into which we'll write our Python code. You could store your API token directly in the .py file, but separating it into a different file enables you to share your Python code without sharing your private API token. Create one folder that will hold both of these files.
 
 ### Create .env file
-Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
+1\. Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
 
 {% include codeHeader.html %}
 ```
 # Private API token generated from Discord Developer Portal:
 DISCORD_TOKEN=<paste-your-token-here>
 ```
-Replace `<paste-your-token-here>` with your unique API token string that you copied and saved in a secure location earlier.
+2\. Replace `<paste-your-token-here>` with your unique API token string that you copied and saved in a secure location earlier.
 
 ### Create .py file
 
-Next, create a Python file named hello_world.py in the same folder. Add the following code to this file:
+1\. Next, create a Python file named hello_world.py in the same folder. Add the following code to this file:
 
 {% include codeHeader.html %}
 ```
@@ -155,7 +155,7 @@ client.run(TOKEN)
 
 ><sup>Note: The code requires the first three import lines. The next two lines support in hiding your personal token from this file by pulling it from the env file created earlier. The next three lines link to the Discord client with specific permissions. @client.event is a decorator function, meaning it takes other functions, like on_ready, as arguments. This is how Discord handles events. Finally, the client runs with your token.</sup>
 
-Run your code by typing the following into your command line and pressing the **enter** key:
+2\. Run your code by typing the following into your command line and pressing the **enter** key:
 
 <details markdown="1">
 <summary>Mac</summary>
@@ -167,7 +167,6 @@ Run your code by typing the following into your command line and pressing the **
 {% include codeHeader.html %}
 ```py -3 hello_world.py```
 </details>
-
 
 Successful code will display the message "The bot has logged in!" on your command line, and your bot will post a message in your Discord server:
 
