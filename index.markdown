@@ -185,6 +185,10 @@ Then, add the following code to your Python file:
 
 {% include codeHeader.html %}
 {% highlight python %}
+intents = discord.Intents.default()
+intents.message_content = True # you need to enable this intent in your code as well
+client = discord.Client(intents=intents)
+
 @client.event
 async def on_message(message):
     if message.content == "Hello":
@@ -194,7 +198,7 @@ async def on_message(message):
 If a user sends the message <i>Hello</i> in the server, the bot will reply with <i>Hi there!</i>. You can add to this code so your bot responds to multiple messages with distinct responses.
 
 ## Tag @everyone
-You can code your bot to send a message that tags @everyone on the server, which can be useful for announcements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following example shows this tag added to our original message:
+You can code your bot to send a message that tags @everyone on the server, which can be useful for announcements. This requires enabling an additional permission, <b>mention_everyone</b>, but otherwise works similarly to sending a normal message. The following code shows this tag added to our original message:
 
 {% include codeHeader.html %}
 {% highlight python %}
@@ -206,7 +210,38 @@ async def on_ready():
 {% endhighlight %}
 
 ## Respond to Commands
-In the previous examples, we created a `client` object in our code to communicate with Discord. To utilize bot commands, we will instead use a `bot` object. You also need to enable **message content intent** under the **Bot** settings in your Discord Developer Portal (see [Respond to Message](#respond-to-message)).
+In the previous examples, we created a `client` object in our code to communicate with Discord. To utilize bot commands, we will instead use a `bot` object. You also need to enable **message content intent** under the **Bot** settings in your Discord Developer Portal (see [Respond to Message](#respond-to-message)). Below is a full Python file that has creates three commands:
+
+{% include codeHeader.html %}
+{% highlight python %}
+import os
+import discord
+from dotenv import load_dotenv
+from discord.ext import commands
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+
+intents = discord.Intents.default()
+intents.message_content = True #
+bot = commands.Bot(command_prefix='$', intents=intents) # $ can be changed
+
+@bot.command()
+async def hello(ctx):
+    await ctx.send("Hello, World!")
+@bot.command()
+async def bye(ctx):
+    await ctx.send("Goodbye!")
+@bot.command()
+async def name(ctx, arg): # you can also add arguments
+    await ctx.send("Hello, " + arg + "!")
+
+bot.run(TOKEN) # we call run on bot instead of client
+{% endhighlight %}
+
+On the server, invoke a command by typing `$` followed by the name of the command:
+
+![Bot commands on a Discord server](/images/commands.png)
 
 
 For more examples, refer to the [discord.py documenation](https://discordpy.readthedocs.io/en/latest/faq.html#general).
