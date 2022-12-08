@@ -120,7 +120,7 @@ We'll create two files: an .env file that will store our API token, and a .py fi
 1\. Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
 
 {% include codeHeader.html %}
-{% highlight html %}
+{% highlight python %}
 # Private API token generated from Discord Developer Portal:
 DISCORD_TOKEN=<paste-your-token-here>
 {% endhighlight %}
