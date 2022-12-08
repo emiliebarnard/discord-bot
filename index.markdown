@@ -243,7 +243,6 @@ On the server, invoke a command by typing `$` followed by the name of the comman
 
 ![Bot commands on a Discord server](/images/commands.png)
 
-
 For more examples, refer to the [discord.py documenation](https://discordpy.readthedocs.io/en/latest/faq.html#general).
 
 {% include post.html %}
