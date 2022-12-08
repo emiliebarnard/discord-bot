@@ -213,7 +213,7 @@ async def on_ready():
 In the previous examples, we created a `client` object in our code to communicate with Discord. To utilize bot commands, we will instead use a `bot` object. You also need to enable **message content intent** under the **Bot** settings in your Discord Developer Portal (see [Respond to Message](#respond-to-message)). Below is a full Python file that has creates three commands:
 
 {% include codeHeader.html %}
-```python
+{% highlight python %}
 import os
 import discord
 from dotenv import load_dotenv
@@ -227,7 +227,7 @@ intents.message_content = True #
 bot = commands.Bot(command_prefix='$', intents=intents) # $ can be changed
 
 @bot.command()
-async def hello(ctx): # ctx, short for Context, is required to read the message
+async def hello(ctx): # ctx, short for Context, is required to read the message in the server
     await ctx.send("Hello, World!")
 @bot.command()
 async def bye(ctx):
@@ -237,7 +237,7 @@ async def name(ctx, arg): # you can also add arguments
     await ctx.send("Hello, " + arg + "!")
 
 bot.run(TOKEN) # we call run on bot instead of client
-```
+{% endhighlight %}
 
 On the server, invoke a command by typing `$` followed by the name of the command:
 
