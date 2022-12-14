@@ -9,22 +9,22 @@ title: Guide
 This is a quickstart guide for writing your first Discord bot, specifically geared towards those with light programming and/or Python experience.
 
 ## Guide Outline
-- Before You Start
-- Set Up Your Discord Developer Portal
-  - Create a Bot Application
-  - Link Your Bot to Your Server
-- Set Up Python
-  - Access Command Line
-  - Install discord.py Library
-  - Install dotenv Library
-- Write Code!
-  - Edit Initial Templates
-    - Create .env File
-    - Create .py File
-- Bot Suggestions
-  - Respond to Messages
-  - Tag @everyone
-  - Respond to Commands
+- [Before You Start](#before-you-start)
+- [Set Up Your Discord Developer Portal](#set-up-your-discord-developer-portal)
+  - [Create a Bot Application](#create-a-bot-application)
+  - [Link Your Bot to Your Server](#link-your-bot-to-your-server)
+- [Set Up Python](#set-up-python)
+  - [Access Command Line](#access-command-lines)
+  - [Install discord.py Library](#install-discordpy-library)
+  - [Install dotenv Library](#install-dotenv-library)
+- [Write Code!](#write-code)
+  - [Edit Initial Templates](#edit-initial-templates)
+    - [Create .env File](#create-env-file)
+    - [Create .py File](#create-py-file)
+- [Bot Suggestions](#bot-suggestions)
+  - [Respond to Messages](#respond-to-messages)
+  - [Tag @everyone](#tag-everyone)
+  - [Respond to Commands](#respond-to-commands)
 
 # Before You Start
 This quickstart guide assumes the following:
