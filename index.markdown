@@ -5,6 +5,27 @@
 layout: default
 title: Guide
 ---
+# Quickstart Guide
+This is a quickstart guide for writing your first Discord bot, specifically geared towards those with light programming and/or Python experience.
+
+## Guide Outline
+- Before You Start
+- Set Up Your Discord Developer Portal
+  - Create a Bot Application
+  - Link Your Bot to Your Server
+- Set Up Python
+  - Access Command Line
+  - Install discord.py Library
+  - Install dotenv Library
+- Write Code!
+  - Edit Initial Templates
+    - Create .env File
+    - Create .py File
+- Bot Suggestions
+  - Respond to Messages
+  - Tag @everyone
+  - Respond to Commands
+
 # Before You Start
 This quickstart guide assumes the following:
 1. You use and understand Discord.
@@ -116,7 +137,7 @@ We finally get to code!
 ## Edit Initial Templates
 We'll create two files: an .env file that will store our API token, and a .py file into which we'll write our Python code. You could store your API token directly in the .py file, but separating it into a different file enables you to share your Python code without sharing your private API token. Create one folder that will hold both of these files.
 
-### Create .env file
+### Create .env File
 1\. Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
 
 {% include codeHeader.html %}
@@ -127,7 +148,7 @@ DISCORD_TOKEN=<paste-your-token-here>
 
 2\. Replace `<paste-your-token-here>` with your unique API token string that you copied and saved in a secure location earlier.
 
-### Create .py file
+### Create .py File
 
 1\. Next, create a Python file named hello_world.py in the same folder. Add the following code to this file:
 
