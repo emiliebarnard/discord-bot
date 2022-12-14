@@ -81,7 +81,7 @@ You'll need your bot's unique API token to connect it with your server and perfo
 
 3\. Under **Settings** on the left-side of the page, select **OAuth2**.
 
-  ><sup>Note:OAuth2 is a common tool that allows an application or website to access information from another host. In our case, it will allow our bot to access resources from Discord.</sup>
+  ><sup>Note: OAuth2 is a common tool that allows an application or website to access information from another host. In our case, it will allow our bot to access resources from Discord.</sup>
 
 4\. Under **Scopes**, select **bot**.
 
