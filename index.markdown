@@ -14,7 +14,7 @@ This is a quickstart guide for writing your first Discord bot, specifically gear
   - [Create a Bot Application](#create-a-bot-application)
   - [Link Your Bot to Your Server](#link-your-bot-to-your-server)
 - [Set Up Python](#set-up-python)
-  - [Access Command Line](#access-command-lines)
+  - [Access Command Line](#access-command-line)
   - [Install discord.py Library](#install-discordpy-library)
   - [Install dotenv Library](#install-dotenv-library)
 - [Write Code!](#write-code)
@@ -197,7 +197,7 @@ Successful code will display the message "The bot has logged in!" on your comman
 # Bot Suggestions
 Looking for more ideas for your bot? More basic examples are below. Note that you will need to update your bot permissions in the Discord Developer Portal for some.
 
-## Respond to Message
+## Respond to Messages
 To have your bot respond to messages, ensure both **send messages** and **read message history** permissions are allowed. You also need to enable **message content intent** under the **Bot** settings in your Discord Developer Portal:
 
 ![Enabling bot message content intent in Developer Portal](/images/message-intent.png)
