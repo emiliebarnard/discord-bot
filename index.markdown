@@ -33,7 +33,7 @@ This quickstart guide assumes the following:
 3. You understand the basics of Python or a similar programming language.
 4. You have the latest version of Python installed on your computer.
 
-For guidance with the above, respectively refer to the following resources:
+For guidance with the above, refer to the following resources:
 1. [Beginner's Guide to Discord](https://support.discord.com/hc/en-us/articles/360045138571-Beginner-s-Guide-to-Discord)
 2. [Discord Support: How do I create a server?](https://support.discord.com/hc/en-us/articles/204849977-How-do-I-create-a-server-)
 3. [W3 Schools Python Tutorial](https://www.w3schools.com/python/)
@@ -67,7 +67,7 @@ You should then see the following page:
 ## Link Your Bot to Your Server
 You'll need your bot's unique API token to connect it with your server and perform fun commands.
 
-><sup>Note: Keep your API token private (otherwise other people can control your bot) and save it to a secure location. Keep this in mind if you plan to host your code publicly, such as on GitHub. [Black Tech Divas offers a tutorial](https://medium.com/black-tech-diva/hide-your-api-keys-7635e181a06c) on this. You can reset your token at anytime if it is accidentally shared, but you'll need to update it in your code.</sup>
+><sup>Note: Keep your API token private (otherwise other people can control your bot) and save it to a secure location. Keep this in mind if you plan to host your code publicly, such as on GitHub. This guide covers some basic information, and [Black Tech Divas offers a more detailed tutorial on how to keep your API keys private](https://medium.com/black-tech-diva/hide-your-api-keys-7635e181a06c). You can reset your token at anytime if it is accidentally shared, but you'll need to update it in your code.</sup>
 
 1\. Click **Reset Token**, then **Yes, do it!** A long string of text, your API token, will appear:
 
@@ -77,7 +77,7 @@ You'll need your bot's unique API token to connect it with your server and perfo
 
 2\. Click **Copy**. Open a text editor, paste the token, and save this text to a secure location. We'll use it soon.
 
-  Next you'll need to set the permissions, what your bot is able to do, and scope, where your bot can access information. We'll first set the scope.
+  Next you'll need to set the permissions, what your bot is able to do, scope, and where your bot can access information. We'll first set the scope.
 
 3\. Under **Settings** on the left-side of the page, select **OAuth2**.
 
