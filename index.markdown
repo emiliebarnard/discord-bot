@@ -44,11 +44,13 @@ Navigate to the [Discord Developer Portal](https://discord.com/developers/) and 
 
 ![Discord Developer Portal page](/images/dev-portal-home.png)
 ## Create a Bot Application
-1\. Click the **New Application** button on the top-right of the page.
+1\. Click the **New Application** button on the top-right of the above page.
 
-  ![Creating and naming a Discord App](/images/create-app.png){: width="50%"}
+2\. Give your bot application a name, and review and agree to the Discord Developer Terms of Service and Developer Policy. Click **Create** on the bottom-right of the window.
 
-2\. Give your bot application a name, and review and agree to the Discord Developer Terms of Service and Developer Policy. Click **Create** on the bottom-right of the window. You should see the following page:
+![Creating and naming a Discord App](/images/create-app.png){: width="50%"}
+
+You should then see the following page:
 
   ![Discord App General Information Page](/images/gen-info.png)
 
