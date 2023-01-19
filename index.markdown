@@ -118,15 +118,15 @@ Computer operating systems allow command line access in different ways. Follow t
 </details>
 
 ## Install discord.py Library
-We will use <i>pip</i>, the preferred installer program for Python, to download the discord.py Python library. This is required to write Python code that allows us to interact with Discord.
+We will use <i>pip</i>, the preferred installer program for Python, to download the discord.py Python library. This allows our code to interact with Discord.
 
-2\. In your command line window, type the following command and press the **enter** key:
+2\. Type the following in your command line window and press the **enter** key:
 
 {% include codeHeader.html %}
 ```pip install -U discord.py```
 
-## Install dotenv library
-While this step is optional, it is best practice to install this Library to help us keep our private API token separate from our Python code.
+## Install dotenv Library
+While this step is optional, it is best practice to install this library to separate our private API token from our Python code.
 
 In your command line window, type the following command and press the **enter** key:
 
@@ -137,7 +137,7 @@ In your command line window, type the following command and press the **enter** 
 We finally get to code!
 
 ## Edit Initial Templates
-We'll create two files: an .env file that will store our API token, and a .py file into which we'll write our Python code. You could store your API token directly in the .py file, but separating it into a different file enables you to share your Python code without sharing your private API token. Create one folder that will hold both of these files.
+We'll create two files: an .env file that will store our API token, and a .py file into which we'll write our Python code. You could store your API token directly in the .py file, but separating it into a different file enables you to share your Python code without sharing your private API token. Create one folder that will hold these files.
 
 ### Create .env File
 1\. Create a text file named __.env__ in the folder of your choice. Add the following two lines to this file:
@@ -148,7 +148,7 @@ We'll create two files: an .env file that will store our API token, and a .py fi
 DISCORD_TOKEN=<paste-your-token-here>
 {% endhighlight %}
 
-2\. Replace `<paste-your-token-here>` with your unique API token string that you copied and saved in a secure location earlier.
+2\. Replace `<paste-your-token-here>` with your unique API token string.
 
 ### Create .py File
 
