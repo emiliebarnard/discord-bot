@@ -6,3 +6,5 @@ The site is hosted through GitHub pages: https://emiliebarnard.github.io/discord
 You are currently viewing the main branch, which includes some sample code. The [gh-pages branch](https://github.com/emiliebarnard/discord-bot-guide/tree/gh-pages) hosts the code for the website on GitHub pages.
 
 Last updated December 2022
+
+(Please note that this was written before I was employed at Discord, Inc.)
